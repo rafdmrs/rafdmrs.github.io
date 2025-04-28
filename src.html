@@ -1,0 +1,195 @@
+<header>
+    <div class="logo">
+      <strong>Scoope</strong><br>
+      <small>Talent Academy</small>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="tentang.html">About Us</a>
+      <a href="kursus.html">Course</a>
+      <a href="src.html">Blog</a>
+    </nav>
+  </header>
+
+<section class="recent-blog">
+    <div class="container">
+      <h2>Our Recent <span class="highlight">Blog</span></h2>
+      <div class="blog-grid">
+        
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <img src="Rectangle.png" alt="Blog 1" />
+          <div class="blog-content">
+            <p class="date">July 09, 2024</p>
+            <h3>Stakeholder Management:...</h3>
+            <p class="excerpt">One of the skills that a Product Manager must master is communicating well...</p>
+            <div class="tags">
+              <span class="tag pink">Research</span>
+              <span class="tag green">UX</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <img src="io.png" alt="Blog 2" />
+          <div class="blog-content">
+            <p class="date">July 09, 2024</p>
+            <h3>Stakeholder Management:...</h3>
+            <p class="excerpt">One of the skills that a Product Manager must master is communicating well...</p>
+            <div class="tags">
+              <span class="tag pink">Research</span>
+              <span class="tag green">UX</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Blog Card 3 -->
+        <div class="blog-card wide">
+          <img src="ya.png" alt="Blog 3" />
+          <div class="blog-content">
+            <p class="date">July 09, 2024</p>
+            <h3>Agile Development Projects and Usability</h3>
+            <p class="excerpt">Agile methods aim to overcome usability barriers in traditional development...</p>
+            <div class="tags">
+              <span class="tag purple">Programming</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .recent-blog {
+      padding: 60px 20px;
+      background: #fff;
+    }
+  
+    .recent-blog .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+  
+    .recent-blog h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+  
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+  
+      nav a:hover {
+        color: #2196F3;
+      }
+  
+  
+    .highlight {
+      color: #2196F3;
+    }
+  
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: auto;
+      gap: 30px;
+    }
+  
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+  
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+  
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: filter 0.3s;
+    }
+  
+    .blog-card img:hover {
+      filter: brightness(0.9);
+    }
+  
+    .blog-content {
+      padding: 20px;
+    }
+  
+    .date {
+      color: #2196F3;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .blog-content h3 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  
+    .excerpt {
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+  
+    .tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    .tag {
+      font-size: 12px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      color: white;
+    }
+  
+    .tag.pink {
+      background: #f8b4d9;
+      color: #333;
+    }
+  
+    .tag.green {
+      background: #d9f8e6;
+      color: #333;
+    }
+  
+    .tag.purple {
+      background: #d5b4f8;
+      color: #333;
+    }
+  
+    .wide {
+      grid-column: span 2;
+    }
+  
+    @media (max-width: 768px) {
+      .wide {
+        grid-column: span 1;
+      }
+    }
+  </style>
+  

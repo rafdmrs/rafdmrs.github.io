@@ -1,0 +1,139 @@
+<header>
+    <div class="logo">
+      <strong>Scoope</strong><br>
+      <small>Talent Academy</small>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="tentang.html">About Us</a>
+      <a href="kursus.html">Course</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
+
+<section class="about-me">
+    <div class="container">
+      <div class="about-content">
+        <div class="profile-img">
+          <img src="aku.jpeg" alt="Foto Saya" />
+        </div>
+        <div class="text-content">
+          <h2>Tentang Saya</h2>
+          <h3>Nama Kamu</h3>
+          <p>
+            Halo! Saya adalah seorang <strong>web developer</strong> yang passionate dalam membangun website modern, responsif, dan user-friendly. Saya memiliki pengalaman dalam HTML, CSS, JavaScript, dan berbagai tools front-end modern.
+          </p>
+          <p>
+            Saat ini saya aktif sebagai pengajar di Genesis Talent Academy dan juga mengerjakan beberapa project freelance di bidang UI/UX Design dan Web Development.
+          </p>
+          <a href="#contact" class="contact-btn">Hubungi Saya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .about-me {
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+  
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+      }
+  
+      nav a:hover {
+        color: #2196F3;
+      }
+  
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .profile-img img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #2196F3;
+      transition: transform 0.3s ease;
+    }
+  
+    .profile-img img:hover {
+      transform: scale(1.05);
+    }
+  
+    .text-content {
+      flex: 1;
+      min-width: 300px;
+    }
+  
+    .text-content h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #2196F3;
+    }
+  
+    .text-content h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+  
+    .text-content p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  
+    .contact-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #2196F3;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+  
+    .contact-btn:hover {
+      background: #1976d2;
+    }
+  
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .text-content h2 {
+        font-size: 28px;
+      }
+  
+      .text-content h3 {
+        font-size: 20px;
+      }
+    }
+  </style>
+  

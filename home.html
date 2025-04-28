@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Genesis Talent Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2196F3;
+    }
+
+    section {
+      padding: 50px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-text, .about-text {
+      max-width: 500px;
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      line-height: 1.4;
+    }
+
+    .highlight {
+      color: #2196F3;
+    }
+
+    .hero-text p, .about-text p {
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .btn, .learn-btn, .contact-btn {
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover, .learn-btn:hover, .contact-btn:hover {
+      background-color: #1769aa;
+      transform: scale(1.05);
+    }
+
+    .hero-image, .choose-image {
+      max-width: 400px;
+      position: relative;
+      margin: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image:hover, .choose-image:hover {
+      transform: scale(1.03);
+    }
+
+    .hero-image img, .choose-image img, .course-card img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-image img:hover, .choose-image img:hover, .course-card img:hover {
+      transform: scale(1.02);
+    }
+
+    .badge {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+
+    .badge.course {
+      top: 0;
+      left: -30px;
+    }
+
+    .badge.mentor {
+      bottom: 0;
+      right: -30px;
+    }
+
+    .choose-content {
+      flex: 1;
+      max-width: 500px;
+      padding: 0 20px;
+    }
+
+    .choose-content h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .choose-content ul {
+      list-style: none;
+    }
+
+    .choose-content li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: start;
+    }
+
+    .choose-content li img {
+      width: 24px;
+      margin-right: 10px;
+    }
+
+    .courses {
+      flex-direction: column;
+      background: #e9f4fb;
+      text-align: center;
+    }
+
+    .courses h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .courses p {
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .course-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      color: #2196F3;
+      margin: 10px 0;
+    }
+
+    .contact-btn {
+      margin: 30px auto 0;
+    }
+
+    footer {
+      background-color: #2196F3;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .hero, .about, .choose {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 28px;
+      }
+
+      .hero-image, .choose-image {
+        margin: 20px 0;
+      }
+    }
+
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 22px;
+      }
+
+      nav a {
+        margin: 5px 10px;
+        font-size: 14px;
+      }
+
+      .btn, .learn-btn, .contact-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <strong>Scoope</strong><br>
+      <small>Talent Academy</small>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="tentang.html">About Us</a>
+      <a href="kursus.html">Course</a>
+      <a href="src.html">Blog</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Up Your <span class="highlight">Skills</span><br>
+        To <span class="highlight">Advance</span> Your<br>
+        <span class="highlight">Career</span> Path
+      </h1>
+      <p>Provide you with the latest course and material that help your knowledge growing.</p>
+      <button class="btn">Contact Us</button>
+    </div>
+    <div class="hero-image">
+      <img src="Group 2.png" alt="Student Image">
+      <div class="badge course">🎓 20+ Course</div>
+      <div class="badge mentor">👨‍🏫 Expert Mentors</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="oya.png" alt="Technology Illustration">
+    <div class="hero-text">
+      <h2>About <span class="highlight">Genesis Talent Academy Profesional</span></h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+      <button class="learn-btn">Learn More</button>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="choose">
+    <div class="choose-image">
+      <img src="oue.png" alt="Why Choose">
+    </div>
+    <div class="choose-content">
+      <h2>Why Choose <span class="highlight">Genesis Talent Academy</span>?</h2>
+      <ul>
+        <li><img src="https://img.icons8.com/ios-filled/50/2196F3/teacher.png"/> <div><strong>Expert Instructors</strong><br>Learn from industry experts with years of practical experience.</div></li>
+        <li><img src="https://img.icons8.com/ios-filled/50/2196F3/work.png"/> <div><strong>Hands-On Training</strong><br>Real-world projects and the latest material.</div></li>
+        <li><img src="https://img.icons8.com/ios-filled/50/2196F3/laptop.png"/> <div><strong>Flexible Learning</strong><br>Online, offline, or blended learning modes.</div></li>
+        <li><img src="https://img.icons8.com/ios-filled/50/2196F3/school.png"/> <div><strong>Modern Facilities</strong><br>Fully equipped classrooms and labs.</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Course Program Section -->
+  <section class="courses">
+    <h2>Our Course Programs</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+    <div class="course-cards">
+      <div class="course-card">
+        <img src="Bitmap.png" alt="Bootcamp">
+        <h3>Bootcamp</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="course-card">
+        <img src="Bitmap.png" alt="Training">
+        <h3>Training/Certification</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="course-card">
+        <img src="Bitmap.png" alt="Regular Class">
+        <h3>Regular Class</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+    </div>
+    <button class="contact-btn">Contact Us</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Rafael. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="#" style="color: white; text-decoration: underline;">Instagram</a>, 
+      <a href="#" style="color: white; text-decoration: underline;">Facebook</a>, 
+      <a href="#" style="color: white; text-decoration: underline;">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>

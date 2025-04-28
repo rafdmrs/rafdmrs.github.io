@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Popular Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2196F3;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-image {
+      position: relative;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #2196F3;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .category {
+      font-size: 14px;
+      color: #2196F3;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .instructor {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .instructor-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .instructor-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .instructor-info span {
+      font-size: 14px;
+    }
+
+    .instructor-info span strong {
+      color: #2196F3;
+    }
+
+    .arrow {
+      color: #2196F3;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <strong>Scoope</strong><br>
+      <small>Talent Academy</small>
+    </div>
+    <nav>
+      <a href="ho">Home</a>
+      <a href="#">About Us</a>
+      <a href="kursus.html">Course</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h4 style="color: #2196F3; font-weight: bold;">Explore Programs</h4>
+    <h2>Our Most Popular Class</h2>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-image">
+          <img src="iy.png" alt="Database Class">
+          <div class="badge">BOOTCAMP</div>
+        </div>
+        <div class="card-content">
+          <div class="category">Programming</div>
+          <div class="card-title">Creating Application Databases for Database Administrators</div>
+          <div class="card-desc">Learn how to use Software DBeaver, MariaDB and create a Database for the App.</div>
+          <div class="instructor">
+            <div class="instructor-info">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Wick">
+              <span><strong>John Wick, Ph.D.</strong><br>Software Engineer</span>
+            </div>
+            <div class="arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-image">
+          <img src="iy.png" alt="UX Class">
+          <div class="badge" style="background:#2ea6ff;">Reguler</div>
+        </div>
+        <div class="card-content">
+          <div class="category">Design</div>
+          <div class="card-title">UX Research For Product Researcher</div>
+          <div class="card-desc">Using Figma to get a job in UX Researcher; Design Thinking, Visual Design.</div>
+          <div class="instructor">
+            <div class="instructor-info">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Ed">
+              <span><strong>Michael Ed, Ph.D.</strong><br>UI/UX Designer</span>
+            </div>
+            <div class="arrow">↗</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-image">
+          <img src="iy.png" alt="Marketing Class">
+          <div class="badge" style="background:#00c4a0;">Certification</div>
+        </div>
+        <div class="card-content">
+          <div class="category">Technology</div>
+          <div class="card-title">Learn the Basics of Digital Marketing</div>
+          <div class="card-desc">Learn the basic of Digital Marketing, SEO, Social Media Ads and content management.</div>
+          <div class="instructor">
+            <div class="instructor-info">
+              <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Johny Freitas">
+              <span><strong>Johny Freitas, Ph.D.</strong><br>Digital Marketing</span>
+            </div>
+            <div class="arrow">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
